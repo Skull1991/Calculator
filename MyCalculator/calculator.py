@@ -6,8 +6,8 @@ root.geometry('355x475')
 root.config(bg="#333333")
 root.resizable(False, False)
 root.iconbitmap("calculator.ico")
-skull = Frame(root, bg='#333333')
-skull.pack()
+
+
 
 expression = ''
 
@@ -39,7 +39,8 @@ def clear():
 def off():
     root.destroy()
 
-
+skull = Frame(root, bg='#333333')
+skull.pack()
 # Creating Entry
 equation = StringVar()
 equation.set('0')
@@ -105,4 +106,5 @@ b_div.grid(row=1, column=1)
 
 b_equal.grid(row=4, column=3, rowspan=2, sticky='nsew')
 b_off.grid(row=1, column=0)
+
 root.mainloop()
